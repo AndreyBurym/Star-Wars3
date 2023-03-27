@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 28, 28);
+    background-image: url(./img/pngwing.com\ \(3\).png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 2000px;
+}
+
+.title {}
+
+.block {
+    margin: 0 auto;
+    position: relative;
+    max-height: 1200px;
+    position: relative;
+    left: 10%;
+    height: 1000px;
+}
+
+.photo-1 {
+    transition: 0.5s;
+
+}
+
+.photo-2 {}
+
+.photo-3 {}
+
+.GitHub {
+    transition: 1s;
+}
+
+@keyframes GitHub {
+    0% {
+        position: absolute;
+    }
+
+    50% {
+        overflow: hidden;
+        transform: translateY(500px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Adidas {
+    0% {
+        position: absolute;
+    }
+
+    50% {}
+
+    75% {
+        position: relative;
+        top: 180px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Youtube {
+    0% {
+        position: absolute;
+    }
+
+    50% {
+        position: relative;
+        bottom: 180px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.Adidas {
+    transition: 0.5s;
+}
+
+.Youtube {
+    transition: 0.5s;
+}
+
+.photo-1:hover {
+
+    cursor: pointer;
+
+}
+
+.GitHub:active {
+    cursor: pointer;
+
+}
+
+.img-1 {
+    transition: 3s;
+    animation: GitHub 5s linear;
+}
+
+.img-2 {
+    animation: Adidas 5s linear;
+}
+
+.img-3 {
+    animation: Youtube 5s linear;
+}
+
+.GitHub {
+    font-size: 30px;
+}
+
+.Adidas {
+    font-size: 30px;
+}
+
+.Youtube {
+    font-size: 30px;
+}
