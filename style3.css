@@ -1,0 +1,138 @@
+body {
+    background-image: url(https://wallpapers.com/images/hd/the-force-awakens-30lpueufq6zaskpy.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.img-1 {
+    animation: Rocket 5s;
+    transition: 1s;
+}
+
+@keyframes Rocket {
+    70% {
+        transform: translateY(500px) rotate(0.9turn);
+    }
+
+    50% {
+        transform: translateY(-500px) rotate(0.1turn);
+    }
+}
+
+.img-2 {
+    animation: White_man 5s;
+    bottom: 35px;
+    transition: 1s;
+}
+
+@keyframes White_man {
+    50% {
+        transform: translateY(-500px);
+    }
+}
+
+.img-3 {
+    position: relative;
+    left: 800px;
+    animation: Spotnik 5s;
+    bottom: 35px;
+    transition: 1s;
+}
+
+@keyframes Spotnik {
+    0% {
+        transform: rotate(0.5turn);
+    }
+
+    50% {
+        transform: translateY(-700px) rotate(0.5turn);
+    }
+
+    75% {
+        transform: translateX(-700px) translateY(-1000px);
+    }
+}
+
+.photo-1:active .Rocket {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.photo-2:active .White-man {
+    opacity: 1;
+    transform: translateY(-400px);
+    cursor: pointer;
+}
+
+.photo-3:active .Spotnik {
+    opacity: 1;
+    transform: translateX(-400px);
+    cursor: pointer;
+}
+
+.img-1:active {
+    transform: translateY(-400px);
+    cursor: pointer;
+}
+
+.img-2:active {
+    transform: translateY(400px) rotate(0.5turn);
+    cursor: pointer;
+}
+
+.img-3:active {
+    transform: translateY(-1000px) rotate(0.5turn) translateX(500px);
+    cursor: pointer;
+}
+
+.title {
+    background-color: #fff;
+    font-size: 80px;
+    text-align: center;
+}
+
+.photo-1 {
+    position: absolute;
+}
+
+.photo-2 {
+    position: relative;
+    left: 500px;
+}
+
+.photo-3 {
+    position: relative;
+    left: 70px;
+}
+
+.block {
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    left: 400px;
+}
+
+.Rocket {
+    transition: 1s;
+    color: #fff;
+    opacity: 0;
+    font-size: 70px;
+}
+
+.White-man {
+    transition: 1s;
+    color: #fff;
+    opacity: 0;
+    font-size: 70px;
+}
+
+.Spotnik {
+    transition: 1s;
+    opacity: 0;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    font-size: 70px;
+}
